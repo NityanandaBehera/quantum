@@ -29,4 +29,6 @@ const userRoutes = require("./routes/userRoutes");
 app.use("/api", userRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const itemRoutes = require("./routes/itemRoutes");
-app.use("/ecom-api", itemRoutes);
+app.use("/api", itemRoutes);
+const authRoutes = require("./routes/authRoutes");
+app.use("/api", authRoutes);
